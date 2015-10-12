@@ -1,0 +1,6 @@
+---
+applications:
+- name: spring-petclinic12345
+  memory: 512M
+  host: spring-petclinic12345
+  domain: mybluemix.net
