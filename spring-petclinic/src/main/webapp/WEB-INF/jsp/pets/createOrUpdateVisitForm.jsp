@@ -43,8 +43,12 @@
 
     <form:form modelAttribute="visit">
     
-        <petclinic:inputField label="date" name="date" />
-        <petclinic:inputField label="description" name="description" />
+    <label>date</label><input type="text" id="date" name="date"/>
+		
+<%--         <petclinic:inputField label="date" name="date" /> --%>
+        <label>description</label>
+		<input type="text" name="description"/>
+<%--         <petclinic:inputField label="description" name="description" /> --%>
         
         <div class="form-actions">
             <input type="hidden" name="petId" value="${visit.pet.id}"/>

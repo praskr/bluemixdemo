@@ -24,11 +24,21 @@
         <c:if test="${owner['new']}">New </c:if> Owner
     </h2>
     <form:form modelAttribute="owner" method="${method}" class="form-horizontal" id="add-owner-form">
-        <petclinic:inputField label="First Name" name="firstName"/>
-        <petclinic:inputField label="Last Name" name="lastName"/>
-        <petclinic:inputField label="Address" name="address"/>
-        <petclinic:inputField label="City" name="city"/>
-        <petclinic:inputField label="Telephone" name="telephone"/>
+<%--         <petclinic:inputField label="First Name" name="firstName"/> --%>
+<%--         <petclinic:inputField label="Last Name" name="lastName"/> --%>
+<%--         <petclinic:inputField label="Address" name="address"/> --%>
+<%--         <petclinic:inputField label="City" name="city"/> --%>
+<%--         <petclinic:inputField label="Telephone" name="telephone"/> --%>
+		<label>First Name</label>
+		<input type="text" name="firstName" value="${owner.firstName}"/>
+		<label>Last Name</label>
+		<input type="text" name="lastName" value="${owner.lastName}"/>
+		<label>Address</label>
+		<input type="text" name="address" value="${owner.address}"/>
+		<label>City</label>
+		<input type="text" name="city" value="${owner.city}"/>
+		<label>Telephone</label>
+		<input type="text" name="telephone" value="${owner.telephone}"/>
 
         <div class="form-actions">
             <c:choose>

@@ -189,7 +189,7 @@
 		</dependency>
 
 		<!-- For MySql only -->
-		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> </dependency> -->
+		<dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> </dependency>
 		<!-- HIBERNATE -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
