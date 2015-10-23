@@ -7,8 +7,13 @@
 
 <html lang="en">
 <head>
+
+</head>
+<jsp:include page="../fragments/staticFiles.jsp"/>
+
 <script type="text/javascript" charset="utf8" src="/resources/script/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" charset="utf8" src="/resources/script/jquery.dataTables.min.js"></script>
+  <link href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet"></link>
 
 <script>
 $(document).ready(function() {
@@ -20,25 +25,28 @@ $(document).ready(function() {
             "type": "GET"
         },
         "columns": [
-            { "data": "name1" },
-            { "data": "specialties" }          
+            { "data": "id" },
+            { "data": "firstName" },
+            { "data": "lastName" },
+            { "data": "nrOfSpecialties" },
+            { "data": "new" }          
         ]
     } );
 } );
 </script>
-</head>
-<jsp:include page="../fragments/staticFiles.jsp"/>
-
 <body>
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
     <h2>Veterinarians</h2>
 
-<table id="vets" name="vets" cssClass="table table-striped">
+<table id="vets" name="vets" class="display" cellspacing="0" width="601px;">
 <thead>
-<th>Name1</th>
-<th>Specialties</th>
+<th>id</th>
+<th>firstName</th>
+<th>lastName</th>
+<th>nrOfSpecialties</th>
+<th>new</th>
 </thead>
 <%
 
