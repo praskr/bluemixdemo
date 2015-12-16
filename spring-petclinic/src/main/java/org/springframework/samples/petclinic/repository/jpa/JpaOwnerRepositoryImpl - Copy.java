@@ -80,14 +80,14 @@ public class JpaOwnerRepositoryImpl implements OwnerRepository {
 
     }
 
-//    @SuppressWarnings("unchecked")
-//	public Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException {
-//		// using 'join fetch' because a single query should load both owners and pets
-//        // using 'left join fetch' because it might happen that an owner does not have pets yet
-//        Query query = this.em.createQuery("SELECT DISTINCT owner FROM Owner owner left join fetch owner.pets WHERE owner.lastName LIKE :lastName and owner.city LIKE :city");
-//        query.setParameter("lastName", lastName + "%");
-//        query.setParameter("city", city + "%");
-//        return query.getResultList();
-//	}
+    @SuppressWarnings("unchecked")
+	public Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException {
+		// using 'join fetch' because a single query should load both owners and pets
+        // using 'left join fetch' because it might happen that an owner does not have pets yet
+        Query query = this.em.createQuery("SELECT DISTINCT owner FROM Owner owner left join fetch owner.pets WHERE owner.lastName LIKE :lastName and owner.city LIKE :city");
+        query.setParameter("lastName", lastName + "%");
+        query.setParameter("city", city + "%");
+        return query.getResultList();
+	}
 
 }
