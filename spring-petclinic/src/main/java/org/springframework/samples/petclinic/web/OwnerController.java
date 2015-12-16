@@ -89,9 +89,13 @@ public class OwnerController {
         if (owner.getLastName() == null) {
             owner.setLastName(""); // empty string signifies broadest possible search
         }
+        
+        if(owner.getCity() == null) {
+        	owner.setCity("");
+        }
 
         // find owners by last name
-        Collection<Owner> results = this.clinicService.findOwnerByLastName(owner.getLastName());
+        Collection<Owner> results = this.clinicService.findOwnerByLastNameOrCity(owner.getLastName(), owner.getCity());
         if (results.isEmpty()) {
             // no owners found
             result.rejectValue("lastName", "notFound", "not found");

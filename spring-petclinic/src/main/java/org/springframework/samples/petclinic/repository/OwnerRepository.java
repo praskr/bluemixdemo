@@ -75,6 +75,17 @@ public interface OwnerRepository {
      * @see BaseEntity#isNew
      */
     void save(Owner owner) throws DataAccessException;
+    
+    /**
+     * Retrieve <code>Owner</code>s from the data store by last name or city, returning all owners whose last name <i>starts</i>
+     * with the given name or city starts with if both entered last name takes precedence.
+     *
+     * @param lastName Value to search for
+     * @param city value to search for
+     * @return a <code>Collection</code> of matching <code>Owner</code>s (or an empty <code>Collection</code> if none
+     *         found)
+     */
+    Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException;
 
 
 }

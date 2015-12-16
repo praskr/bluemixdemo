@@ -41,7 +41,10 @@ $(document).ready(function() {
     <c:forEach items="${selections}" var="owner">
 		<tr>
             <td>
-            <a href "owners/${owner.id}.html?"><c:out value="${owner.firstName}"/> <c:out value="${owner.lastName}"/></a>
+            <spring:url value="/owners/{ownerId}.html" var="ownerUrl"> 
+			<spring:param name="ownerId" value="${owner.id}"/> 
+		</spring:url>
+             <a href="${fn:escapeXml(ownerUrl)}"><c:out value="${owner.firstName} ${owner.lastName}"/></a>
             
             </td>
             <td><c:out value="${owner.address}"/></td>
