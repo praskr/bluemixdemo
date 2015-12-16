@@ -105,12 +105,12 @@ public class ClinicServiceImpl implements ClinicService {
         return vetRepository.findAll();
     }
 
-	@Override
-	public Collection<Owner> findOwnerByLastNameOrCity(String lastName, String city) throws DataAccessException {
-	
-		 return ownerRepository.findByLastNameOrCity(lastName, city);
-		
-	}
+//	@Override
+//	public Collection<Owner> findOwnerByLastNameOrCity(String lastName, String city) throws DataAccessException {
+//	
+//		 return ownerRepository.findByLastNameOrCity(lastName, city);
+//		
+//	}
 
 
 }

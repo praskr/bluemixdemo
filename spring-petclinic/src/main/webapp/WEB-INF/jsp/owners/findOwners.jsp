@@ -14,21 +14,21 @@
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
     <h2>Find Owners</h2>
-	Please enter last name or city to search
+	<!-- Please enter last name or city to search -->
     <spring:url value="/owners.html" var="formUrl"/>
     <form:form modelAttribute="owner" action="${fn:escapeXml(formUrl)}" method="get" class="form-horizontal"
                id="search-owner-form">
         <fieldset>
             <div class="control-group" id="lastName">
                 <label class="control-label">Last name </label>
-                <form:input path="lastName" size="30" maxlength="80"/> <br/>              
+                <form:input path="lastName" size="30" maxlength="80"/>  <span class="help-inline"><form:errors path="*"/></span> <br/>              
                 
             </div>
-             <div class="control-group" id="city">
+            <!--  <div class="control-group" id="city">
              	<label class="control-label">City </label>
                 <form:input path="city" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
-             </div>
+             </div> -->
             <div class="form-actions">
                 <button type="submit">Find Owner</button>
             </div>
