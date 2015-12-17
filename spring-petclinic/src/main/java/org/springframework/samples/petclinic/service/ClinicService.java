@@ -48,6 +48,6 @@ public interface ClinicService {
 
     Collection<Owner> findOwnerByLastName(String lastName) throws DataAccessException;
     
-    Collection<Owner> findOwnerByLastNameOrCity(String lastName, String city) throws DataAccessException;
+   // Collection<Owner> findOwnerByLastNameOrCity(String lastName, String city) throws DataAccessException;
 
 }
