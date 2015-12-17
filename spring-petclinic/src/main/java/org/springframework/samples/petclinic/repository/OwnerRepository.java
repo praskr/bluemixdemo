@@ -85,7 +85,7 @@ public interface OwnerRepository {
      * @return a <code>Collection</code> of matching <code>Owner</code>s (or an empty <code>Collection</code> if none
      *         found)
      */
-   // Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException;
+    Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException;
 
 
 }

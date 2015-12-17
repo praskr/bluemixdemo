@@ -152,19 +152,19 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
     }
 
 
-//	@Override
-//	public Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException {
-//        Map<String, Object> params = new HashMap<>();
-//        params.put("lastName", lastName + "%");
-//        params.put("city", city + "%");
-//        List<Owner> owners = this.namedParameterJdbcTemplate.query(
-//                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE last_name like :lastName and city like :city",
-//                params,
-//                BeanPropertyRowMapper.newInstance(Owner.class)
-//        );
-//        loadOwnersPetsAndVisits(owners);
-//        return owners;
-//    }
+	@Override
+	public Collection<Owner> findByLastNameOrCity(String lastName, String city) throws DataAccessException {
+        Map<String, Object> params = new HashMap<>();
+        params.put("lastName", lastName + "%");
+        params.put("city", city + "%");
+        List<Owner> owners = this.namedParameterJdbcTemplate.query(
+                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE last_name like :lastName and city like :city",
+                params,
+                BeanPropertyRowMapper.newInstance(Owner.class)
+        );
+        loadOwnersPetsAndVisits(owners);
+        return owners;
+    }
 
 
 }
