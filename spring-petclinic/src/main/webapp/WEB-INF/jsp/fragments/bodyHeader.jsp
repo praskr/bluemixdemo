@@ -9,7 +9,7 @@
         <ul class="nav">
             <li style="width: 120px;"><a href="<spring:url value="/" htmlEscape="true" />"><i class="icon-home"></i>
                 Home</a></li>
-            <li style="width: 150px;"><a href="<spring:url value="/senders/find.html" htmlEscape="true" />"><i
+            <li style="width: 150px;"><a href="<spring:url value="/owners/find.html" htmlEscape="true" />"><i
                     class="icon-search"></i> Find sender</a></li>
             <li style="width: 160px;"><a href="<spring:url value="/vets.html" htmlEscape="true" />"><i
                     class="icon-th-list"></i> Veterinarians</a></li>
