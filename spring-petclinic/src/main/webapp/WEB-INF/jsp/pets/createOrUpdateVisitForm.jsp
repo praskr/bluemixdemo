@@ -30,7 +30,7 @@
             <th>Name</th>
             <th>Birth Date</th>
             <th>Type</th>
-            <th>Owner</th>
+            <th>Sender</th>
         </tr>
         </thead>
         <tr>

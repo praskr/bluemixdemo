@@ -13,7 +13,7 @@
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
-    <h2>Find Owners</h2>
+    <h2>Find Senders</h2>
 	Please enter last name or city to search
     <spring:url value="/owners.html" var="formUrl"/>
     <form:form modelAttribute="owner" action="${fn:escapeXml(formUrl)}" method="get" class="form-horizontal"
@@ -30,13 +30,13 @@
                 <span class="help-inline"><form:errors path="*"/></span>
              </div>
             <div class="form-actions">
-                <button type="submit">Find Owner</button>
+                <button type="submit">Find Sender</button>
             </div>
         </fieldset>
     </form:form>
 
     <br/>
-    <a href='<spring:url value="/owners/new" htmlEscape="true"/>'>Add Owner</a>
+    <a href='<spring:url value="/owners/new" htmlEscape="true"/>'>Add Sender</a>
 
     <jsp:include page="../fragments/footer.jsp"/>
 

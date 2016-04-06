@@ -10,7 +10,7 @@
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
     <spring:url value="/resources/images/pets.png" var="petsImage"/>
-    <img src="${petsImage}"/>
+    <%-- <img src="${petsImage}"/> --%>
 
     <h2>Something happened...</h2>
 

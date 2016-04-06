@@ -14,7 +14,7 @@
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
-    <h2>Owner Information</h2>
+    <h2>Sender Information</h2>
 
     <table class="table table-striped" style="width:600px;">
         <tr>
@@ -38,16 +38,16 @@
             	<spring:url value="{ownerId}/edit.html" var="editUrl">
                     <spring:param name="ownerId" value="${owner.id}"/>
                 </spring:url>
-                <a href="${fn:escapeXml(editUrl)}" class="btn btn-info">Edit Owner</a></td>
+                <a href="${fn:escapeXml(editUrl)}" class="btn btn-info">Edit Sender</a></td>
             <td>
             	<spring:url value="{ownerId}/pets/new.html" var="addUrl">
                     <spring:param name="ownerId" value="${owner.id}"/>
                 </spring:url>
-                <a href="${fn:escapeXml(addUrl)}"  class="btn btn-success">Add New Pet</a></td>
+                <a href="${fn:escapeXml(addUrl)}"  class="btn btn-success">Add New Parcel</a></td>
         </tr>
     </table>
 
-    <h2>Pets and Visits</h2>
+    <h2>Parcels</h2>
 
     <c:forEach var="pet" items="${owner.pets}">
         <table class="table" style="width:600px;">
@@ -82,7 +82,7 @@
 			                        <spring:param name="ownerId" value="${owner.id}"/>
 			                        <spring:param name="petId" value="${pet.id}"/>
 			                    </spring:url>
-			                    <a href="${fn:escapeXml(petUrl)}">Edit Pet</a>
+			                    <a href="${fn:escapeXml(petUrl)}">Edit Parcel</a>
 			                </td>
                             <td>
 			                    <spring:url value="/owners/{ownerId}/pets/{petId}/visits/new" var="visitUrl">

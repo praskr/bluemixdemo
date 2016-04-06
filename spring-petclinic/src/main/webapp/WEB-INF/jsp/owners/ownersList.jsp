@@ -27,7 +27,7 @@ $(document).ready(function() {
 <body>
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
-    <h2>Owners</h2>
+    <h2>Senders</h2>
  
 <table id="owners" name="owners" class="display" cellspacing="0" width="601px;">
 <thead>
@@ -35,7 +35,7 @@ $(document).ready(function() {
 			<th>Address</th>
 			<th>City</th>
 			<th>Telephone</th>
-			<th>Pets</th>
+			<th>Parcels</th>
 			
 		</thead>
     <c:forEach items="${selections}" var="owner">

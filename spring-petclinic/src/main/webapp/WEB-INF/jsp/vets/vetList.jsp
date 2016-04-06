@@ -38,7 +38,7 @@ $(document).ready(function() {
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
-    <h2>Veterinarians1</h2>
+    <h2>Recipients</h2>
 
 <table id="vets" name="vets" class="display" cellspacing="0" width="601px;">
 <thead>
