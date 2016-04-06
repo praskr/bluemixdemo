@@ -23,14 +23,14 @@
     <jsp:include page="../fragments/bodyHeader.jsp"/>
     <h2><c:if test="${visit['new']}">New </c:if>Visit</h2>
 
-    <b>Pet</b>
+    <b>Package</b>
     <table class="table table-striped">
         <thead>
         <tr>
             <th>Name</th>
             <th>Birth Date</th>
             <th>Type</th>
-            <th>Sender</th>
+            <th>Parcel</th>
         </tr>
         </thead>
         <tr>

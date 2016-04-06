@@ -29,13 +29,13 @@
 
     <h2>
         <c:if test="${pet['new']}">New </c:if>
-        Parcels
+        Package
     </h2>
 
     <form:form modelAttribute="pet" method="${method}"
                class="form-horizontal">
         <div class="control-group" id="owner">
-            <label class="control-label">Sender </label>
+            <label class="control-label">Parcel </label>
 
             <c:out value="${pet.owner.firstName} ${pet.owner.lastName}"/>
         </div>
@@ -47,10 +47,10 @@
         <div class="form-actions">
             <c:choose>
                 <c:when test="${pet['new']}">
-                    <button type="submit">Add Parcels</button>
+                    <button type="submit">Add Package</button>
                 </c:when>
                 <c:otherwise>
-                    <button type="submit">Update Parcels</button>
+                    <button type="submit">Update Package</button>
                 </c:otherwise>
             </c:choose>
         </div>

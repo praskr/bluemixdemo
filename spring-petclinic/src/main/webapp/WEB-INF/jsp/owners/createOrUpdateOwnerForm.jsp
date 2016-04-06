@@ -21,7 +21,7 @@
     </c:choose>
 
     <h2>
-        <c:if test="${owner['new']}">New </c:if> Sender
+        <c:if test="${owner['new']}">New </c:if> Parcel
     </h2>
     <form:form modelAttribute="owner" method="${method}" class="form-horizontal" id="add-owner-form">
 <%--         <petclinic:inputField label="First Name" name="firstName"/> --%>
@@ -43,10 +43,10 @@
         <div class="form-actions">
             <c:choose>
                 <c:when test="${owner['new']}">
-                    <button type="submit">Add Sender</button>
+                    <button type="submit">Add Parcel</button>
                 </c:when>
                 <c:otherwise>
-                    <button type="submit">Update Sender</button>
+                    <button type="submit">Update Parcel</button>
                 </c:otherwise>
             </c:choose>
         </div>
