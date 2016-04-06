@@ -20,17 +20,17 @@
                id="search-owner-form">
         <fieldset>
             <div class="control-group" id="lastName">
-                <label class="control-label">Last name </label>
+                <label class="control-label">Tracking No.</label>
                 <form:input path="lastName" size="30" maxlength="80"/> <br/>              
                 
             </div>
-            
+            <%--
              <div class="control-group" id="city">
-             	<label class="control-label">City </label>
+             	<label class="control-label">Sender Last Name</label>
                 <form:input path="city" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
              </div>
-             
+             --%>
             <div class="form-actions">
                 <button type="submit">Find Parcels</button>
             </div>
