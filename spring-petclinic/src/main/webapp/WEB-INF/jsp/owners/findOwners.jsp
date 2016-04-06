@@ -26,7 +26,7 @@
             </div>
             
              <div class="control-group" id="city">
-             	<label class="control-label">Sender Last Name:</label>
+             	<label class="control-label">Sender Last Name :</label>
                 <form:input path="city" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
              </div>
