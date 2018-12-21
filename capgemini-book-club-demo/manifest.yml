@@ -1,0 +1,11 @@
+applications:
+- services:
+  - Language Translator-gn
+  - Globalization Pipeline-40
+  - Insights for Twitter-gm
+  - AlchemyAPI-bookclub
+  host: bookclubdemo
+  name: capgemini-book-club-demo
+  domain: mybluemix.net
+  instances: 1
+  memory: 768M
