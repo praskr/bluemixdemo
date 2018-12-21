@@ -19,4 +19,5 @@ The Book Club application contains the following contents:
 *   pom.xml
 
     This file builds the Book Club application using Maven.
-    
+   
+Requires following Bluemix services: AlchemyAPI, Globalization pipeline, Language Translator
